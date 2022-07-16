@@ -1,0 +1,73 @@
+/*#region*/
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+}
+/*#endregion*/
+
+/*#region*/
+.menu_ber {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+}
+.logo {
+  flex: 1;
+}
+#logo_img {
+  width: 10%;
+  height: 4vh;
+  background-image: url(image/logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  margin: 0.5vh;
+}
+.item_ber {
+  flex: 1;
+}
+.list {
+  display: flex;
+  height: 5vh;
+}
+.list > li {
+  flex: 1;
+  line-height: 5vh;
+  text-align: center;
+}
+.list > li > a {
+  font-size: 1.7vh;
+}
+.img_frame {
+  width: 100%;
+  height: 45vh;
+  background-image: url(image/배경.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+.header_title {
+  position: relative;
+  text-align: center;
+  top: 120px;
+}
+.header_title > h2 {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 7vh;
+  font-family: "Edu TAS Beginner", cursive;
+}
+.header_title > h1 {
+  color: white;
+  text-shadow: 4px 4px 4px black;
+  font-size: 10vh;
+  font-family: "Nanum Pen Script", cursive;
+}
+/*#endregion*/
