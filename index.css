@@ -1,5 +1,5 @@
+/* 기본 설정 */
 /*#region*/
-
 * {
   font-family: "Noto Sans KR", sans-serif;
   list-style: none;
@@ -9,8 +9,20 @@
   padding: 0px;
   color: #000;
 }
+
+.main_text_width {
+  width: 80vw;
+  margin: 0 auto;
+}
+.main_text_width > h1 {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  text-align: center;
+  font-size: 50px;
+}
 /*#endregion*/
 
+/* 헤더 */
 /*#region*/
 .menu_ber {
   width: 100%;
@@ -51,12 +63,11 @@
   background-image: url(image/배경.png);
   background-size: cover;
   background-position: center;
-  position: absolute;
 }
 .header_title {
   position: relative;
   text-align: center;
-  top: 120px;
+  top: 10vh;
 }
 .header_title > h2 {
   color: white;
@@ -69,5 +80,120 @@
   text-shadow: 4px 4px 4px black;
   font-size: 10vh;
   font-family: "Nanum Pen Script", cursive;
+}
+/*#endregion*/
+
+/* 정보 */
+/*#region*/
+.main_text-1 {
+  height: 900px;
+  background: white;
+}
+.m1_flex_frame {
+  display: flex;
+}
+.m1_flex_frame > li {
+  text-align: center;
+  flex: 1;
+}
+.m1_img_size {
+  width: 10vw;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.m1_img_size > img {
+  width: 100%;
+  object-fit: cover;
+}
+/*#endregion*/
+
+/*#region*/
+.main_text-2 {
+  height: 2200px;
+  background: whitesmoke;
+}
+.m2_list > li {
+  height: 550px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: flex;
+}
+.m2_list > li > div {
+  flex: 4;
+}
+.m2_list > li > div:nth-child(2) {
+  flex: 1;
+}
+.m2_list_img {
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 2vh;
+}
+.m2_list_img > img {
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+}
+.m2_float {
+  text-align: right;
+}
+.m2_list > li > div > h2 {
+  font-weight: 300;
+}
+/*#endregion*/
+
+/*#region*/
+.main_text-3 {
+  height: 1700px;
+  background: white;
+}
+.m3_list > li {
+  height: 40vh;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  display: flex;
+}
+.m3_list > li > div {
+  flex: 3;
+}
+.m3_list > li > div:nth-child(2),
+.m3_list > li > div:nth-child(4) {
+  flex: 1;
+}
+.m3_list > li > div > div {
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 2vh;
+}
+.m3_list > li > div > div > img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+.m3_list > li > div > h1 {
+  text-align: center;
+  position: relative;
+  bottom: 22vh;
+  color: white;
+}
+/*#endregion*/
+
+/*#region*/
+footer {
+  width: 100%;
+  height: 5vh;
+  background: rgb(32, 32, 32);
+  display: flex;
+  line-height: 5vh;
+}
+footer > div {
+  flex: 1;
+  text-align: center;
+  color: white;
 }
 /*#endregion*/
